@@ -1,9 +1,18 @@
 import HeroSub from '../../assets/hero-sub.svg';
 import HeroPet from '../../assets/hero-pet.svg';
 import ButtonHeroPet from '../../assets/tombol-hero-pet.svg';
+import { useEffect, useState } from 'react';
 
 
 const Hero = () => {
+  const [count, setCount] = useState(0);
+  const [number, setNumber] = useState(0);
+
+  useEffect(() => {
+    setNumber(count + 1);
+
+  }, [count])
+
   return (
     <section id="home" className="flex items-center xl:h-screen">
       <div className="container mx-auto mt-24 sm:mt-32 xl:mt-20">
@@ -30,14 +39,19 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2 lg:gap-4">
               <img src={HeroSub} alt="" className="w-[45%] xl:w-[35%]" />
-              <h1 className="text-xs font-bold text-primary lg:text-sm xl:text-base">
-                Berbagai Hewan
-              </h1>
+              <button type='button' className="text-xs cursor-pointer font-bold text-primary lg:text-sm xl:text-base">
+                {number} Berbagai Hewan
+              </button>
             </div>
           </div>
           <div className="mt-1 hidden w-[50%] sm:block xl:mt-2" data-aos="fade-left">
             <img src={HeroPet} alt="" className="w-full" />
+            <div>
+              <p>Jumlah: {count}</p>
+              <button onClick={() => setCount(count + 1)}>Tambah</button>
+            </div>
           </div>
+
         </div>
       </div>
     </section>

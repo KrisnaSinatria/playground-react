@@ -4,7 +4,6 @@ import '../../index.css';
 import { useEffect, useRef } from 'react';
 
 
-
 const Navbar = () => {
 
     const hamburgerRef = useRef<HTMLButtonElement>(null);
