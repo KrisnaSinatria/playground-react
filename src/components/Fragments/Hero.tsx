@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="flex w-full items-center justify-between gap-6">
           <div className="flex w-[85%] flex-col justify-between gap-4 sm:w-[45%] lg:gap-6 xl:w-1/2" data-aos="fade-right"
             data-aos-delay="200">
-            <h1 className="text-lg font-extrabold lg:text-xl xl:text-[2.5rem] xl:font-black xl:leading-[3.5rem]">
+            <h1 className="text-lg font- font-extrabold lg:text-xl xl:text-[2.5rem] xl:font-black xl:leading-[3.5rem]">
               Gelombang Kesenangan Hewan Peliharaan Anda, Hanya di Sini!
             </h1>
             <p className="opacity-80 w-[90%] text-[10px] font-medium md:text-xs lg:text-base 2xl:text-lg">

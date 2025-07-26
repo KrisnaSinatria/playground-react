@@ -50,7 +50,7 @@ const Navbar = () => {
                             <img src={Hamburger} alt="" className="invert filter" />
                         </button>
                         <nav ref={navMenuRef} id="nav-menu"
-                            className="absolute right-4 top-full z-50 hidden w-52 rounded-lg bg-transparent py-4 shadow-lg md:static md:block md:w-full md:rounded-none md:bg-opacity-0 md:text-xs md:shadow-none xl:md:text-sm">
+                            className="absolute right-4 top-full z-50 hidden w-52 rounded-lg bg-body py-4 shadow-lg md:static md:block md:w-full md:rounded-none md:bg-opacity-0 md:text-xs md:shadow-none xl:md:text-sm">
                             <ul className="block md:flex md:font-semibold">
                                 <li className="group">
                                     <a href="#home" className="nav-class">Beranda</a>
