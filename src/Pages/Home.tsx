@@ -1,6 +1,5 @@
-import Hero from "../components/Fragments/Hero";
-import Navbar from "../components/Layouts/Navbar";
-// import Testimonial from "../components/Fragments/Testimonial"; 
+import Sidebar from "../components/Layouts/Sidebar";
+import Task from "../components/Fragments/Task"; 
 // import Product from "../components/Fragments/Product";
 // import ContactMe from "../components/Fragments/ContactMe";
 // import Footer from "../components/Fragments/Footer";
@@ -8,8 +7,8 @@ import Navbar from "../components/Layouts/Navbar";
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <Hero />
+      <Sidebar />
+      <Task />
       {/* <Testimonial /> */}
       {/* <About /> */}
       {/* <Product /> */}

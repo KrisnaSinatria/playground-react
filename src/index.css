@@ -1,51 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme{
-    --color-primary: #060249; 
-    --color-body: #FBF2EB;
-    --secondary: #FCD98C;
+    --color-primary: #6BD743; 
+    --color-body: #F3F4F6;
+    --color-bodyDark: #1B1B1B;
+    --color-bgDark: #252525;
 }
 
  body {
-   font-family: "Poppins", sans-serif;
+   font-family: "Urbanist", sans-serif;
 }
 
 .container{
   width: 85%;
 }
 
-
-.navbar-fixed{
-  @apply fixed z-[9999] bg-body backdrop-blur-[1px];
+.main.active {
+    @apply md:w-full md:ml-0;
 }
 
-.nav-class{
-  @apply mx-4 flex py-2 group-hover:text-primary z-50 md:text-primary relative before:absolute before:bottom-0 before:h-[3px] before:w-0 before:bg-primary before:transition-all group-hover:before:w-full;
+.table-wrap {
+    @apply overflow-x-auto mt-6 md:mt-0;
 }
-
-.scale{
-  @apply transition-all duration-300 hover:scale-105 active:scale-105 brightness-95 group-hover:scale-105 group-active:scale-105 group-hover:brightness-95;
-}
-
-.overflow{
-  @apply overflow-hidden rounded-xl bg-white;
-}
-
-.overflow-gal{
-  @apply overflow-hidden rounded md:rounded-md xl:rounded-xl;
-}
-
-.img-menu{
-  @apply h-full w-full object-cover rounded transition-transform duration-300 hover:scale-110 md:rounded-md xl:rounded-xl;
-}
-
-.img-gallery{
-  @apply h-full w-full object-cover rounded md:rounded-md xl:rounded-xl transition-transform duration-300 hover:scale-110;
-}
-
-.service-box{
-  @apply w-[35%] sm:w-[18%];
-}
-
