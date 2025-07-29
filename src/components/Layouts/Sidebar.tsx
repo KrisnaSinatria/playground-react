@@ -12,7 +12,7 @@ const Sidebar = () => {
                 <div className="flex items-center gap-2 border-b-2 border-black/10 dark:border-white/10">
                     <a href="#" className="ml-4 py-4 flex items-center gap-2">
                         <img src="/img/logo-2.svg" className="w-[20%] mr-1" alt="" />
-                        <span className="text-xl font-bold">FlowKas</span>
+                        <span className="text-xl font-bold">Dashboard</span>
                     </a>
                     <div className="flex">
                         <button onClick={toggleTheme} className="dark-mode-toggle xl:hidden">
@@ -35,7 +35,7 @@ const Sidebar = () => {
                         <Link to="/dashboard" className="flex items-center py-4 px-4 rounded-lg">
                             <img src="" alt="" className="mr-4" />
 
-                            <span className="text-sm xl:text-sm font-semibold">Transaksi</span>
+                            <span className="text-sm xl:text-sm font-semibold">Item</span>
                         </Link>
                     </li>
                 </ul>

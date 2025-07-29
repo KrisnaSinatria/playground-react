@@ -1,5 +1,5 @@
-import { useTheme } from "../../Utils/theming";
-import { useSidebar } from '../../Utils/theming';
+import { useTheme } from "../../../Utils/theming"
+import { useSidebar } from '../../../Utils/theming'
 import { Bars3Icon } from '@heroicons/react/24/solid'
 
 const Task = () => {
@@ -47,10 +47,10 @@ const Task = () => {
             <div className="bg-white p-4 xl:px-6 rounded-lg border-2 border-black/10 dark:bg-bgDark dark:border-white/10 duration-200">
 
               <div className="flex justify-between mt-4 xl:mt-6 items-center mb-1 xl:mb-2">
-                <h1 className="font-semibold text-base xl:text-lg text-nowrap">Data Pemasukan</h1>
+                <h1 className="font-semibold text-base xl:text-lg text-nowrap">Data Tugas</h1>
                 <a href="/dashboard/income/create"
                   className="font-medium text-xs xl:text-sm tracking-wide block bg-primary rounded-sm text-white px-2 xl:px-4 py-2.5">
-                  <p className=" line-clamp-1">Buat Pemasukan Baru</p>
+                  <p className=" line-clamp-1">Buat tugas Baru</p>
                 </a>
               </div>
               <div className="table-wrap">
@@ -62,13 +62,13 @@ const Task = () => {
                         <p className="text-left pr-6">No</p>
                       </th>
                       <th className="font-semibold py-3 text-[16px]">
-                        <p className="text-left pr-6">Tanggal</p>
+                        <p className="text-left pr-6">Judul</p>
                       </th>
                       <th className="font-semibold py-3 text-[16px]">
-                        <p className="text-left pr-6 text-nowrap">Total Pemasukan</p>
+                        <p className="text-left pr-6 text-nowrap">Deskripsi</p>
                       </th>
                       <th className="font-semibold py-3 text-[16px]">
-                        <p className="text-left pr-6">Deskripsi</p>
+                        <p className="text-left pr-6">Status</p>
                       </th>
                       <th className="font-semibold py-3 text-[16px]"></th>
                     </tr>
@@ -82,23 +82,23 @@ const Task = () => {
                         <p className="text-left pr-6 text-nowrap"></p>
                       </td>
                       <td className="py-3 text-[16px]">
-                        <p className="text-left pr-6">Rp. </p>
+                        <p className="text-left pr-6"></p>
                       </td>
                       <td className="py-3 text-[16px] max-w-[90px]">
                         <p className="text-left pr-6 max-w-40 break-words truncate">
                         </p>
                       </td>
                       <td className="py-3 text-[16px] flex gap-2 w-32 items-start">
-                        <a href="/dashboard/income/{{ $income->id }}" className="">
+                        <a href="" className="">
                           <img src="/img/kotak lihat.svg" className="w-14 h-14 object-contain"
                             alt="" />
                         </a>
-                        <a href="/dashboard/income/{{ $income->id }}/edit" className="">
+                        <a href="" className="">
                           <img src="/img/kotak edit.svg" className="w-14 h-14 object-contain"
                             alt="" />
                         </a>
                         <form id="delete-form-{{ $income->id }}"
-                          action="/dashboard/income/{{ $income->id }}" method="post">
+                          action="" method="post">
                           <button type="button"
                             className="w-full">
                             <img src="/img/kotak hapus.svg" className="w-14 h-14 object-contain"
