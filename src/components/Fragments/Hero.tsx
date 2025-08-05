@@ -10,7 +10,6 @@ const Hero = () => {
 
   useEffect(() => {
     setNumber(count + 1);
-
   }, [count])
 
   return (
