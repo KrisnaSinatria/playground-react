@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+    --color-primary: #6BD743; 
+    --color-body: #F3F4F6;
+    --color-bodyDark: #1B1B1B;
+    --color-bgDark: #252525;
+}
+
+ body {
+   font-family: "Urbanist", sans-serif;
+}
+
+.container{
+  width: 85%;
+}
+
+.main.active {
+    @apply md:w-full md:ml-0;
+}
+
+.table-wrap {
+    @apply overflow-x-auto mt-6 md:mt-0;
+}
