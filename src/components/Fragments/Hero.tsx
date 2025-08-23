@@ -8,6 +8,14 @@ const Hero = () => {
   const [count, setCount] = useState(0);
   const [number, setNumber] = useState(0);
 
+  const incement = () => {
+    setCount(count + 1);
+  }
+
+  const decrement = () => {
+    setCount(count - 1);
+  }
+
   useEffect(() => {
     setNumber(count + 1);
   }, [count])

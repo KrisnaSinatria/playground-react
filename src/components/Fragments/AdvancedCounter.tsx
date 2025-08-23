@@ -20,7 +20,7 @@ const AdvancedCounter: React.FC = () => {
     const saveToLocalStorage = setTimeout(() => {
       localStorage.setItem('counterValue', count.toString());
       setSavedMessage('Changes saved.');
-    }, 1000);
+    }, 500);
 
     return () => clearTimeout(saveToLocalStorage);
   }, [count]);
@@ -36,14 +36,22 @@ const AdvancedCounter: React.FC = () => {
   }, [step]);
 
   return (
-    <div  className='mt-20 mx-auto border max-w-96 border-black/10 p-10'>
+    <div style={{
+      maxWidth: 400,
+      margin: '0 auto',
+      border: '1px solid #ccc',
+      padding: 24,
+      borderRadius: 8,
+      textAlign: 'center',
+      fontFamily: 'Arial'
+    }} className='mt-20 mx-auto border  border-black/10 p-10'>
       <h2>Counter</h2>
       <h3>Current Count: <strong>{count}</strong></h3>
 
       <div style={{ marginBottom: 16 }}>
-        <button onClick={decrement}>-</button>
+        <button onClick={decrement}>Decrement</button>
         {' '}
-        <button onClick={increment}>+</button>
+        <button onClick={increment}>Increment</button>
         {' '}
         <button onClick={reset} style={{ backgroundColor: 'red', color: 'white' }}>
           Reset
