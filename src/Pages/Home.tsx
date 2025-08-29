@@ -1,20 +1,10 @@
-// import Hero from "../components/Fragments/Hero";
-// import Navbar from "../components/Layouts/Navbar";
-// import Testimonial from "../components/Fragments/Testimonial"; 
-import AdvancedCounter from "../components/Fragments/AdvancedCounter";
-// import ContactMe from "../components/Fragments/ContactMe";
-// import Footer from "../components/Fragments/Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
-      {/* <Navbar /> */}
-      <AdvancedCounter />
-      {/* <Hero /> */}
-      {/* <About /> */}
-      {/* <Product /> */}
-      {/* <ContactMe /> */}
-      {/* <Footer /> */}
+      <h1 className="">ini home</h1>
+      <Link to='/item' className="">pindah ke item</Link>
     </>
   );
 };
