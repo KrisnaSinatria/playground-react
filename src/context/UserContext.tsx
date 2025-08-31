@@ -1,19 +1,27 @@
-import { createContext } from "react";
+import { createContext, useState, useEffect } from "react";
 
 
-const Context = createContext("");
+const Context = createContext([]);
 
-type Props = {
-    children: string
-}
+const Provider = ({ children }: any) => {
 
+    const [data, setData] = useState([]);
 
-const Provider = ({children}: any) => {
-    return(
-        <Context.Provider value={'krisna'}>
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await fetch('https://www.themealdb.com/api/json/v1/1/categories.php');
+            
+            const result = await response.json();
+            setData(result.categories);
+        };
+        fetchData();
+    }, []);
+
+    return (
+        <Context.Provider value={data}>
             {children}
         </Context.Provider>
     )
 }
 
-export {Context, Provider};
+export { Context, Provider };

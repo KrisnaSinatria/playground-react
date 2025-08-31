@@ -3,11 +3,17 @@ import { Context } from "../context/UserContext";
 
 const Parent = () => {
 
-  const name = useContext(Context);
+  const data = useContext(Context);
+  console.log(data);
   
+
   return (
     <>
-    ini halaman Parent {name}
+      ini halaman Parent
+      {data.map((i: any) => {
+        console.log(i);
+        return <p key={i.idCategory}>{i.strCategory}</p>
+      })}
     </>
   );
 };
