@@ -17,6 +17,9 @@ const Provider = ({ children }: any) => {
         fetchData();
     }, []);
 
+    console.log(data);
+    
+
     return (
         <Context.Provider value={data}>
             {children}
